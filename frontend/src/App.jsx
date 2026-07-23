@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Doubts from './pages/Doubts';
 import DoubtDetail from './pages/DoubtDetail';
+import Notes from './pages/Notes';
 
 function Home() {
   return <h1 style={{ textAlign: 'center', marginTop: '50px' }}>Welcome to Campus Connect</h1>;
@@ -19,6 +20,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/doubts" element={<Doubts />} />
         <Route path="/doubts/:id" element={<DoubtDetail />} />
+        <Route path="/notes" element={<Notes />} />
       </Routes>
     </BrowserRouter>
   );
